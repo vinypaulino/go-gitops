@@ -1,8 +1,9 @@
-name: CD  Gitops
+name: CDGitops
 
 on:
   push:
-    branches: ["main"]
+    branches: [main]
+
 jobs:
   build:
     name: Build
@@ -41,5 +42,5 @@ jobs:
       - name: Push
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB.TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           repository: vinypaulino/go-gitops

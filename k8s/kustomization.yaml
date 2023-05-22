@@ -8,4 +8,4 @@ resources:
 images:
 - name: goserver
   newName: vinypaulino/gitopsfc
-  newTag: newtag
+  newTag: 9008150dc2104f0282d1ea88a1946195fc86a967
